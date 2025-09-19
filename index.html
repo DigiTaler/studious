@@ -98,33 +98,6 @@
             <div style="margin-top:12px"><a class="btn" href="#kontakt">Jetzt Termin</a></div>
           </div>
         </div>
-
-        <div>
-          <div class="card">
-            <h3 style="margin-top:0">Schnell starten</h3>
-            <form id="signup" onsubmit="handleSignup(event)">
-              <input type="text" id="name" placeholder="Name" required />
-              <input type="email" id="email" placeholder="E-Mail" required />
-              <select id="level">
-                <option>Grundschule</option>
-                <option>Sekundarstufe I</option>
-                <option>Sekundarstufe II / Gymnasium</option>
-              </select>
-              <button class="btn" type="submit">Kennenlerngespräch anfragen</button>
-            </form>
-            <script>
-              function handleSignup(e){
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const level = document.getElementById('level').value;
-                const subject = encodeURIComponent('Anfrage Kennenlerngespräch - ' + level);
-                const body = encodeURIComponent('Name: '+name+'%0AEmail: '+email+'%0ALevel: '+level+'%0A%0ABitte Termin vorschlagen.');
-                window.location.href = 'mailto:info@schuelerhilfe.example?subject='+subject+'&body='+body;
-              }
-            </script>
-          </div>
-        </div>
       </div>
     </section>
 
