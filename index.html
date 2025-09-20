@@ -199,7 +199,7 @@
           const focus = document.getElementById('cfocus').value;
           const message = document.getElementById('cmessage').value;
           const subject = encodeURIComponent('[Kontaktformular] ' + focus + ' - ' + name);
-          const body = encodeURIComponent('Name: '+name+' Email: '+email+'Telefon: '+phone+'Fokus: '+focus+'Nachricht: '+message);
+          const body = encodeURIComponent('Name: '+name+' Email: '+email+' Telefon: '+phone+' Fokus: '+focus+' Nachricht: '+message);
           window.location.href = 'mailto:dirk.lewien@googlemail.com?subject='+subject+'&body='+body;
         }
       </script>
