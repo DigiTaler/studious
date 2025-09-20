@@ -210,7 +210,7 @@
           const focus = document.getElementById('cfocus').value;
           const message = document.getElementById('cmessage').value;
           const subject = encodeURIComponent('[Kontaktformular] ' + focus + ' - ' + name);
-          const body = encodeURIComponent('Name: '+name+'%0AEmail: '+email+'%0ATelefon: '+phone+'%0AFokus: '+focus+'%0A%0ANachricht:%0A'+message);
+          const body = encodeURIComponent('Name: '+name+' Email: '+email+'Telefon: '+phone+'Fokus: '+focus+'Nachricht: '+message);
           window.location.href = 'mailto:dirk.lewien@icloud.com?subject='+subject+'&body='+body;
         }
       </script>
